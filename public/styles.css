@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 80px;
+    color: white;
+}
+
+p {
+    color: wheat;
+}
+
+nav {
+    background-color: rgb(129, 150, 139);
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    background: white;
+    /* padding: 20px; */
+    align-items: center;
+    /* border-radius: 10px; */
+    background: url('2.png') no-repeat center center/cover;
+    /* box-shadow: 0px 0px 10px rgba(142, 28, 28, 0.1); */
+}
+
+form input, form button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.btn {
+    background: rgb(129, 150, 139);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e04a2b;
+}
+
+.booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.booking-card {
+    background: #181313;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(216, 211, 211, 0.057);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+}
+
+.booking-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.bookingform {
+    width: 50%;
+    padding: 40px auto;
+}
+
+.delete-btn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.delete-btn:hover {
+    background: #c9302c;
+}
+
+/* Menu Section */
+.menu-filter {
+    margin-top: 20px;
+}
+
+.menu-filter button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-filter button:hover {
+    background-color: #e04a2b;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact & Location Section */
+.contact-section {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.contact-section p {
+    color: #f8f8f8;
+}
+
+.section{
+    height: 80vh;
+    width: 100%;
+    background: url('2.png') no-repeat center center/cover;
+    
+}

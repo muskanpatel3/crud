@@ -1,0 +1,64 @@
+<%- include ('layout') %>
+
+<head>
+    <script>
+        function filterMenu(category) {
+            let items = document.querySelectorAll('.menu-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <div class="section section1">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Book your table online and enjoy a wonderful dining experience.</p>
+            <a href="/booking" class="btn">Book Now</a>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="section section1">
+            <h2 style="color: white;">Our Menu</h2>
+            <div class="menu-filter">
+                <button onclick="filterMenu('all')">All</button>
+                <button onclick="filterMenu('veg')">Veg</button>
+                <button onclick="filterMenu('nonveg')">Non-Veg</button>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item veg">Paneer Tikka</div>
+                <div class="menu-item veg">Veg Biryani</div>
+                <div class="menu-item nonveg">Chicken Curry</div>
+                <div class="menu-item nonveg">Mutton Kebab</div>
+                <div class="menu-item veg">Dal Tadka</div>
+                <div class="menu-item nonveg">Fish Fry</div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section section1">
+            <h2 style="color: white;">About Us</h2>
+            <p>Experience the best flavors in town! We serve delicious meals prepared with love and the freshest ingredients.</p>
+        </div>
+
+        <!-- Contact & Location Section -->
+        <div class="section contact-section">
+            <h2 style="color: white;">Contact & Location</h2>
+            <p><strong>Address:</strong> 123 Food Street, City, Country</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> contact@ourrestaurant.com</p>
+        </div>
+
+    </div>
+
+</body>
